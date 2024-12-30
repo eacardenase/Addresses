@@ -18,5 +18,10 @@ int main(int argc, const char * argv[]) {
     *addressOfI = 89;
     printf("Now i is %d\n", i);
     
+    printf("An int is %zu bytes\n", sizeof(i));
+    printf("An int pointer is %zu bytes\n", sizeof(addressOfI)); // 4 if 32-bit, 8 if 64-bit
+    
+    printf("A float pointer is %zu bytes\n", sizeof(float));
+    
     return 0;
 }
